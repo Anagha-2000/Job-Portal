@@ -1,0 +1,114 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    class="img-fluid"
+                    alt="Sample image"
+                />
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <h3
+                    style="
+                        text-align: left;
+                        color: #4747ff;
+                        margin-bottom: 20px;
+                    "
+                >
+                    Student Sign Up
+                </h3>
+                <form>
+                    <div class="container">
+                        <!-- <label>Student ID: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="text"
+                            placeholder="Enter Student ID"
+                            [(ngModel)]="studentId"
+                            name="studentId"
+                            required
+                        /> -->
+                        <label>First Name: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="text"
+                            placeholder="Enter First Name"
+                            [(ngModel)]="firstName"
+                            name="firstName"
+                            required
+                        />
+                        <label>Last Name: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="text"
+                            placeholder="Enter Last Name"
+                            [(ngModel)]="lastName"
+                            name="lastName"
+                            required
+                        />
+                        <label>Email: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="text"
+                            placeholder="Enter Email"
+                            [(ngModel)]="emailId"
+                            name="emailId"
+                            required
+                        />
+                        <label>Password: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="password"
+                            placeholder="Enter Password"
+                            [(ngModel)]="password"
+                            name="password"
+                            required
+                        />
+                        <label>Degree: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="text"
+                            placeholder="Enter Degree"
+                            [(ngModel)]="degree"
+                            name="degree"
+                            required
+                        />
+                        <label>Course: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="text"
+                            placeholder="Enter Course"
+                            [(ngModel)]="course"
+                            name="course"
+                            required
+                        />
+                        <label>Phone Number: </label>
+                        <input
+                            class="form-control form-control-sm lowermargin"
+                            type="text"
+                            placeholder="Enter Phone Number"
+                            [(ngModel)]="phoneNumber"
+                            name="phoneNumber"
+                            required
+                        />
+                    <!-- </div>
+                    <div class="text-center text-lg-start mt-4 pt-2"> -->
+                        <button
+                            type="button"
+                            class="btn btn-primary btn uppermargin"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem"
+                            (click)="signupNow()"
+                        >
+                            Sign Up
+                        </button>
+                        <p class="small fw-bold mt-2 pt-1 mb-0">
+                            Already have an account?
+                            <a href="/login" class="link-danger">Log In</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

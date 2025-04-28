@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>JobPortal</title>
+
+        <link rel="stylesheet" href="coordinatordashboard.component.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg justify-content-between">
+            <div class="container">
+                <a class="navbar-brand"
+                    ><h2 class="text-center">
+                        JobPortal : Coordinator Dashboard
+                    </h2></a
+                >
+            </div>
+            <button
+                class="btn btn-light my-2 my-sm-0"
+                type="submit"
+                (click)="logout()"
+            >
+                Logout
+            </button>
+        </nav>
+
+        <h2 id="joblisting">Job Listings</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Job Type</th>
+                    <th>Description</th>
+                    <th>Domain</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody class="tbl-accordion-header">
+                <tr *ngFor="let company of companies">
+                    <td>{{ company.companyName }}</td>
+                    <td>{{ company.jobType }}</td>
+                    <td>{{ company.profileDescription }}</td>
+                    <td>{{ company.streamType }}</td>
+                    <td>
+                        <a href="{{ company.jobUrl }}">{{ company.jobUrl }}</a>
+                    </td>
+                </tr>
+            </tbody>
+            <button
+                class="btn btn-outline-primary"
+                type="submit"
+                (click)="redirectAddNewJob()"
+                id="addjob"
+            >
+                Add Job
+            </button>
+        </table>
+    </body>
+</html>
